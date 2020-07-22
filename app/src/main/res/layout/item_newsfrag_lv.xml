@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/item_newsfrag_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="国考经验交流会"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/item_news_iv1"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@mipmap/bg_defualt_220x150"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:id="@+id/item_news_iv2"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@mipmap/bg_defualt_220x150"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <ImageView
+            android:id="@+id/item_news_iv3"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:src="@mipmap/bg_defualt_220x150"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/item_news_tv_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新浪"
+            android:drawableLeft="@mipmap/topic_user_default"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/item_news_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2020-7-17 11:28:18"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_alignBaseline="@id/item_news_tv_source"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
